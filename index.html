@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Malla Interactiva - Enfermería</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fdf6ff;
+            color: #333;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #5e387e;
+        }
+        .semestre {
+            background-color: #e8d5f7;
+            border: 2px solid #b089c7;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .titulo-semestre {
+            font-size: 20px;
+            font-weight: bold;
+            color: #4a2f60;
+            margin-bottom: 10px;
+        }
+        .ramo {
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #d3bce5;
+            margin: 5px 0;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .prerequisitos {
+            display: none;
+            font-size: 13px;
+            margin-top: 5px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Malla Curricular Interactiva - Enfermería</h1>
+    <div class="semestre">
+  <div class="titulo-semestre">Primer Semestre</div>
+  <div class="ramo" onclick="toggle(this)">BIOLOGÍA CELULAR<div class="prerequisitos">Prerrequisitos: Ninguno</div></div>
+  <div class="ramo" onclick="toggle(this)">LAB. BIOLOGÍA CELULAR<div class="prerequisitos">Prerrequisitos: Ninguno</div></div>
+  <div class="ramo" onclick="toggle(this)">ANATOMÍA HUMANA<div class="prerequisitos">Prerrequisitos: Ninguno</div></div>
+  <div class="ramo" onclick="toggle(this)">LAB. ANATOMÍA HUMANA<div class="prerequisitos">Prerrequisitos: Ninguno</div></div>
+  <div class="ramo" onclick="toggle(this)">QUÍMICA GENERAL Y ORGÁNICA<div class="prerequisitos">Prerrequisitos: Ninguno</div></div>
+  <div class="ramo" onclick="toggle(this)">LAB. QUÍMICA GENERAL Y ORGÁNICA<div class="prerequisitos">Prerrequisitos: Ninguno</div></div>
+  <div class="ramo" onclick="toggle(this)">PSICOLOGÍA DEL DESARROLLO Y APRENDIZAJE<div class="prerequisitos">Prerrequisitos: Ninguno</div></div>
+  <div class="ramo" onclick="toggle(this)">BASES CONCEPTUALES DE LA GESTIÓN DEL CUIDADO<div class="prerequisitos">Prerrequisitos: Ninguno</div></div>
+</div>
+<div class="semestre">
+  <div class="titulo-semestre">Segundo Semestre</div>
+  <div class="ramo" onclick="toggle(this)">FISIOLOGÍA HUMANA<div class="prerequisitos">Prerrequisitos: BIOLOGÍA CELULAR, LAB. BIOLOGÍA CELULAR, ANATOMÍA HUMANA, LAB. ANATOMÍA HUMANA</div></div>
+  <div class="ramo" onclick="toggle(this)">LAB. FISIOLOGÍA HUMANA<div class="prerequisitos">Prerrequisitos: BIOLOGÍA CELULAR, LAB. BIOLOGÍA CELULAR, ANATOMÍA HUMANA, LAB. ANATOMÍA HUMANA</div></div>
+  <div class="ramo" onclick="toggle(this)">HISTOLOGÍA GENERAL<div class="prerequisitos">Prerrequisitos: BIOLOGÍA CELULAR, LAB. BIOLOGÍA CELULAR</div></div>
+  <div class="ramo" onclick="toggle(this)">LAB. HISTOLOGÍA GENERAL<div class="prerequisitos">Prerrequisitos: BIOLOGÍA CELULAR, LAB. BIOLOGÍA CELULAR</div></div>
+  <div class="ramo" onclick="toggle(this)">BIOQUÍMICA GENERAL<div class="prerequisitos">Prerrequisitos: BIOLOGÍA CELULAR, LAB. BIOLOGÍA CELULAR, QUÍMICA GENERAL Y ORGÁNICA, LAB. QUÍMICA GENERAL Y ORGÁNICA</div></div>
+  <div class="ramo" onclick="toggle(this)">LAB. BIOQUÍMICA GENERAL<div class="prerequisitos">Prerrequisitos: BIOLOGÍA CELULAR, LAB. BIOLOGÍA CELULAR, QUÍMICA GENERAL Y ORGÁNICA, LAB. QUÍMICA GENERAL Y ORGÁNICA</div></div>
+  <div class="ramo" onclick="toggle(this)">SOCIOANTROPOLOGÍA EN LA SALUD<div class="prerequisitos">Prerrequisitos: BASES CONCEPTUALES DE LA GESTIÓN DEL CUIDADO</div></div>
+  <div class="ramo" onclick="toggle(this)">PRIMEROS AUXILIOS<div class="prerequisitos">Prerrequisitos: BASES CONCEPTUALES DE LA GESTIÓN DEL CUIDADO</div></div>
+</div>
+<div class="semestre">
+  <div class="titulo-semestre">Tercer Semestre</div>
+  <div class="ramo" onclick="toggle(this)">MICROBIOLOGÍA GENERAL<div class="prerequisitos">Prerrequisitos: BIOLOGÍA CELULAR, LAB. BIOLOGÍA CELULAR</div></div>
+  <div class="ramo" onclick="toggle(this)">LAB. MICROBIOLOGÍA GENERAL<div class="prerequisitos">Prerrequisitos: BIOLOGÍA CELULAR, LAB. BIOLOGÍA CELULAR</div></div>
+  <div class="ramo" onclick="toggle(this)">FARMACOLOGÍA GENERAL<div class="prerequisitos">Prerrequisitos: FISIOLOGÍA HUMANA, LAB. FISIOLOGÍA HUMANA, BIOQUÍMICA GENERAL, LAB. BIOQUÍMICA GENERAL</div></div>
+  <div class="ramo" onclick="toggle(this)">FARMACOLOGÍA APLICADA<div class="prerequisitos">Prerrequisitos: FISIOLOGÍA HUMANA, LAB. FISIOLOGÍA HUMANA, BIOQUÍMICA GENERAL, LAB. BIOQUÍMICA GENERAL</div></div>
+  <div class="ramo" onclick="toggle(this)">FISIOPATOLOGÍA<div class="prerequisitos">Prerrequisitos: FISIOLOGÍA HUMANA, LAB. FISIOLOGÍA HUMANA, BIOQUÍMICA GENERAL, LAB. BIOQUÍMICA GENERAL</div></div>
+  <div class="ramo" onclick="toggle(this)">ENFERMERÍA EN EL CICLO VITAL<div class="prerequisitos">Prerrequisitos: FISIOLOGÍA HUMANA, BIOQUÍMICA GENERAL, HISTOLOGÍA GENERAL, PSICOLOGÍA DEL DESARROLLO Y APRENDIZAJE, PRIMEROS AUXILIOS</div></div>
+  <div class="ramo" onclick="toggle(this)">EDUCACIÓN EN SALUD<div class="prerequisitos">Prerrequisitos: BASES CONCEPTUALES DE LA GESTIÓN DEL CUIDADO</div></div>
+</div>
+<div class="semestre">
+  <div class="titulo-semestre">Cuarto Semestre</div>
+  <div class="ramo" onclick="toggle(this)">EPIDEMIOLOGÍA<div class="prerequisitos">Prerrequisitos: Ninguno</div></div>
+  <div class="ramo" onclick="toggle(this)">ENFERMERÍA EN SALUD COMUNITARIA I<div class="prerequisitos">Prerrequisitos: ENFERMERÍA EN EL CICLO VITAL, EDUCACIÓN EN SALUD</div></div>
+  <div class="ramo" onclick="toggle(this)">GESTIÓN DEL CUIDADO EN LA PERSONA<div class="prerequisitos">Prerrequisitos: MICROBIOLOGÍA GENERAL, LAB. MICROBIOLOGÍA GENERAL, FARMACOLOGÍA GENERAL, FARMACOLOGÍA APLICADA, FISIOPATOLOGÍA, ENFERMERÍA EN EL CICLO VITAL</div></div>
+  <div class="ramo" onclick="toggle(this)">COMUNICACIÓN E INTERACCIÓN HUMANA<div class="prerequisitos">Prerrequisitos: Ninguno</div></div>
+  <div class="ramo" onclick="toggle(this)">METODOLOGÍA DE ENSEÑANZA EN SALUD<div class="prerequisitos">Prerrequisitos: MICROBIOLOGÍA GENERAL, FARMACOLOGÍA, FISIOPATOLOGÍA, ENFERMERÍA EN EL CICLO VITAL, EDUCACIÓN EN SALUD</div></div>
+</div>
+<div class="semestre">
+  <div class="titulo-semestre">Quinto Semestre</div>
+  <div class="ramo" onclick="toggle(this)">GESTIÓN DEL CUIDADO EN EL ADULTO<div class="prerequisitos">Prerrequisitos: ENFERMERÍA COMUNITARIA I, METODOLOGÍA EN SALUD, GESTIÓN CUIDADO EN LA PERSONA, COMUNICACIÓN HUMANA</div></div>
+  <div class="ramo" onclick="toggle(this)">ADMINISTRACIÓN EN ENFERMERÍA<div class="prerequisitos">Prerrequisitos: GESTIÓN DEL CUIDADO EN LA PERSONA</div></div>
+  <div class="ramo" onclick="toggle(this)">ENFERMERÍA EN SALUD MENTAL<div class="prerequisitos">Prerrequisitos: COMUNITARIA I, METODOLOGÍA EN SALUD, GESTIÓN DEL CUIDADO EN LA PERSONA, COMUNICACIÓN HUMANA</div></div>
+</div>
+<div class="semestre">
+  <div class="titulo-semestre">Sexto Semestre</div>
+  <div class="ramo" onclick="toggle(this)">BIOESTADÍSTICA<div class="prerequisitos">Prerrequisitos: EPIDEMIOLOGÍA</div></div>
+  <div class="ramo" onclick="toggle(this)">GESTIÓN DEL CUIDADO EN EL ADULTO MAYOR<div class="prerequisitos">Prerrequisitos: GESTIÓN CUIDADO EN EL ADULTO, ENFERMERÍA SALUD MENTAL</div></div>
+  <div class="ramo" onclick="toggle(this)">GESTIÓN DE ENFERMERÍA EN SERVICIOS CLÍNICOS<div class="prerequisitos">Prerrequisitos: ADMINISTRACIÓN EN ENFERMERÍA</div></div>
+  <div class="ramo" onclick="toggle(this)">ENFERMERÍA EN ALTERACIONES DE SALUD MENTAL<div class="prerequisitos">Prerrequisitos: GESTIÓN CUIDADO EN EL ADULTO, ENFERMERÍA SALUD MENTAL</div></div>
+  <div class="ramo" onclick="toggle(this)">GESTIÓN DEL CUIDADO EN LA MUJER Y RECIÉN NACIDO<div class="prerequisitos">Prerrequisitos: GESTIÓN CUIDADO EN EL ADULTO, ENFERMERÍA SALUD MENTAL</div></div>
+</div>
+<div class="semestre">
+  <div class="titulo-semestre">Séptimo Semestre</div>
+  <div class="ramo" onclick="toggle(this)">INVESTIGACIÓN I<div class="prerequisitos">Prerrequisitos: BIOESTADÍSTICA</div></div>
+  <div class="ramo" onclick="toggle(this)">ÉTICA EN ENFERMERÍA<div class="prerequisitos">Prerrequisitos: GESTIÓN CUIDADO EN EL ADULTO</div></div>
+  <div class="ramo" onclick="toggle(this)">GESTIÓN DEL CUIDADO EN NIÑO Y NIÑA<div class="prerequisitos">Prerrequisitos: GESTIÓN EN ADULTO MAYOR, MUJER Y RN, ALTERACIONES MENTALES</div></div>
+  <div class="ramo" onclick="toggle(this)">ENFERMERÍA DE URGENCIA<div class="prerequisitos">Prerrequisitos: GESTIÓN EN ADULTO MAYOR, MUJER Y RN, ALTERACIONES MENTALES</div></div>
+  <div class="ramo" onclick="toggle(this)">ELECTIVO DE CARRERA<div class="prerequisitos">Prerrequisitos: Sin información</div></div>
+</div>
+<div class="semestre">
+  <div class="titulo-semestre">Octavo Semestre</div>
+  <div class="ramo" onclick="toggle(this)">ENFERMERÍA EN SALUD COMUNITARIA II<div class="prerequisitos">Prerrequisitos: ENFERMERÍA DE URGENCIA, GESTIÓN EN NIÑO Y NIÑA</div></div>
+  <div class="ramo" onclick="toggle(this)">GESTIÓN DEL CUIDADO EN ADOLESCENTE<div class="prerequisitos">Prerrequisitos: GESTIÓN EN NIÑO Y NIÑA</div></div>
+  <div class="ramo" onclick="toggle(this)">GESTIÓN DEL CUIDADO EN SERVICIOS DE URGENCIA<div class="prerequisitos">Prerrequisitos: ENFERMERÍA DE URGENCIA, GESTIÓN EN NIÑO Y NIÑA</div></div>
+  <div class="ramo" onclick="toggle(this)">INVESTIGACIÓN II<div class="prerequisitos">Prerrequisitos: INVESTIGACIÓN I</div></div>
+</div>
+<div class="semestre">
+  <div class="titulo-semestre">Noveno Semestre</div>
+  <div class="ramo" onclick="toggle(this)">INTERNADO INTRAHOSPITALARIO<div class="prerequisitos">Prerrequisitos: Todos los cursos anteriores</div></div>
+</div>
+<div class="semestre">
+  <div class="titulo-semestre">Décimo Semestre</div>
+  <div class="ramo" onclick="toggle(this)">INTERNADO EXTRAHOSPITALARIO<div class="prerequisitos">Prerrequisitos: Todos los cursos anteriores</div></div>
+</div>
+
+    <script>
+        function toggle(element) {
+            const detail = element.querySelector('.prerequisitos');
+            detail.style.display = (detail.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
